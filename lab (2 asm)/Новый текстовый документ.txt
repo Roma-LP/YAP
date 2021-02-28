@@ -1,0 +1,3 @@
+ml /c Asm02.asm (комптлтруем асемблированный)
+
+link /SUBSYSTEM:CONSOLE Asm02.obj  (компановщик )

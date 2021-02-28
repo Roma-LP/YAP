@@ -1,0 +1,19 @@
+﻿Сборка начата 18.11.2020 20:38:32.
+     1>Проект "C:\БГТУ\ЯП\lab_17\123\лаб17_арсения\lab17\Project1\LP_asm01a\LP_asm01a.vcxproj" в узле 2 (целевые объекты Build).
+     1>InitializeBuildStatus:
+         Обращение к "Debug\LP_asm01a.tlog\unsuccessfulbuild".
+       _MASM:
+       Целевой объект "_MASM" пропускается, так как все выходные файлы актуальны по отношению к входным.
+       Lib:
+         Для всех выходных данных обновления не требуется.
+         LP_asm01a.vcxproj -> C:\БГТУ\ЯП\lab_17\123\лаб17_арсения\lab17\Project1\Debug\LP_asm01a.lib
+       FinalizeBuildStatus:
+         Файл "Debug\LP_asm01a.tlog\unsuccessfulbuild" удаляется.
+         Обращение к "Debug\LP_asm01a.tlog\LP_asm01a.lastbuildstate".
+     1>Сборка проекта "C:\БГТУ\ЯП\lab_17\123\лаб17_арсения\lab17\Project1\LP_asm01a\LP_asm01a.vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+    Предупреждений: 0
+    Ошибок: 0
+
+Прошло времени 00:00:00.05

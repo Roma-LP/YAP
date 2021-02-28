@@ -1,0 +1,28 @@
+﻿Сборка начата 09.12.2020 19:54:37.
+     1>Проект "C:\БГТУ\ЯП\NewSem\lab_17\LP_asm01 (2)\LP_asm01\LP_asm01c\LP_asm01c.vcxproj" в узле 2 (целевые объекты Build).
+     1>PrepareForBuild:
+         Создание каталога "x64\Debug\LP_asm01c.tlog\".
+       InitializeBuildStatus:
+         Создание "x64\Debug\LP_asm01c.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:classic /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc141.pdb" /Gd /TP /FC /errorReport:prompt LP_asm01c.cpp
+         LP_asm01c.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\БГТУ\ЯП\NewSem\lab_17\LP_asm01 (2)\LP_asm01\x64\Debug\LP_asm01c.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"C:\БГТУ\ЯП\NewSem\lab_17\LP_asm01 (2)\LP_asm01\x64\Debug\LP_asm01c.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\БГТУ\ЯП\NewSem\lab_17\LP_asm01 (2)\LP_asm01\x64\Debug\LP_asm01c.lib" /MACHINE:X64 x64\Debug\LP_asm01c.obj
+     1>LP_asm01c.obj : error LNK2019: ссылка на неразрешенный внешний символ getmin в функции main
+     1>LP_asm01c.obj : error LNK2019: ссылка на неразрешенный внешний символ getmax в функции main
+     1>C:\БГТУ\ЯП\NewSem\lab_17\LP_asm01 (2)\LP_asm01\x64\Debug\LP_asm01c.exe : fatal error LNK1120: неразрешенных внешних элементов: 2
+     1>Сборка проекта "C:\БГТУ\ЯП\NewSem\lab_17\LP_asm01 (2)\LP_asm01\LP_asm01c\LP_asm01c.vcxproj" завершена (целевые объекты Build) с ошибкой.
+
+Ошибка сборки.
+
+       "C:\БГТУ\ЯП\NewSem\lab_17\LP_asm01 (2)\LP_asm01\LP_asm01c\LP_asm01c.vcxproj" (целевой объект Build ) (1) ->
+       (Link конечный объект) -> 
+         LP_asm01c.obj : error LNK2019: ссылка на неразрешенный внешний символ getmin в функции main
+         LP_asm01c.obj : error LNK2019: ссылка на неразрешенный внешний символ getmax в функции main
+         C:\БГТУ\ЯП\NewSem\lab_17\LP_asm01 (2)\LP_asm01\x64\Debug\LP_asm01c.exe : fatal error LNK1120: неразрешенных внешних элементов: 2
+
+    Предупреждений: 0
+    Ошибок: 3
+
+Прошло времени 00:00:01.53

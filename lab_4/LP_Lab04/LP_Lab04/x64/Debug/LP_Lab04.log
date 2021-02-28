@@ -1,0 +1,12 @@
+﻿  LP_Lab04.cpp
+d:\бгту\яп\lab 4\lp_lab04\lp_lab04\lp_lab04.cpp(13): warning C4305: инициализация: усечение из "__int64" в "bool"
+d:\бгту\яп\lab 4\lp_lab04\lp_lab04\lp_lab04.cpp(21): warning C4309: инициализация: усечение константного значения
+d:\бгту\яп\lab 4\lp_lab04\lp_lab04\lp_lab04.cpp(32): warning C4305: инициализация: усечение из "__int64" в "long"
+d:\бгту\яп\lab 4\lp_lab04\lp_lab04\lp_lab04.cpp(32): warning C4309: инициализация: усечение константного значения
+d:\бгту\яп\lab 4\lp_lab04\lp_lab04\lp_lab04.cpp(33): warning C4305: инициализация: усечение из "unsigned __int64" в "long"
+d:\бгту\яп\lab 4\lp_lab04\lp_lab04\lp_lab04.cpp(33): warning C4309: инициализация: усечение константного значения
+d:\бгту\яп\lab 4\lp_lab04\lp_lab04\lp_lab04.cpp(34): warning C4309: инициализация: усечение константного значения
+d:\бгту\яп\lab 4\lp_lab04\lp_lab04\lp_lab04.cpp(69): warning C4215: нестандартное расширение: long float
+d:\бгту\яп\lab 4\lp_lab04\lp_lab04\lp_lab04.cpp(57): warning C4723: возможное деление на 0
+d:\бгту\яп\lab 4\lp_lab04\lp_lab04\lp_lab04.cpp(56): warning C4723: возможное деление на 0
+  LP_Lab04.vcxproj -> D:\БГТУ\ЯП\lab 4\LP_Lab04\x64\Debug\LP_Lab04.exe

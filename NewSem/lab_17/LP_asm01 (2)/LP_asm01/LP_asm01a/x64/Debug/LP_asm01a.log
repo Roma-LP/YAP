@@ -1,0 +1,27 @@
+﻿Сборка начата 09.12.2020 19:50:32.
+     1>Проект "C:\БГТУ\ЯП\NewSem\lab_17\LP_asm01 (2)\LP_asm01\LP_asm01a\LP_asm01a.vcxproj" в узле 2 (целевые объекты Build).
+     1>InitializeBuildStatus:
+         Обращение к "x64\Debug\LP_asm01a.tlog\unsuccessfulbuild".
+       _MASM:
+         Assembling LP_asm01a.asm...
+         cmd.exe /C "C:\Users\Senior Programmer\AppData\Local\Temp\tmp49c4ccbad4b94f6cb6565ced913af27d.cmd"
+         ml64.exe /c /nologo /Zi /Fo"x64\Debug\LP_asm01a.obj" /W3 /errorReport:prompt  /TaLP_asm01a.asm
+     1>LP_asm01a.asm(1): error A2008: syntax error : .
+     1>LP_asm01a.asm(2): error A2008: syntax error : .
+     1>LP_asm01a.asm(8): error A2008: syntax error : .
+     1>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\BuildCustomizations\masm.targets(69,5): error MSB3721: выход из команды "ml64.exe /c /nologo /Zi /Fo"x64\Debug\LP_asm01a.obj" /W3 /errorReport:prompt  /TaLP_asm01a.asm" с кодом "1".
+     1>Сборка проекта "C:\БГТУ\ЯП\NewSem\lab_17\LP_asm01 (2)\LP_asm01\LP_asm01a\LP_asm01a.vcxproj" завершена (целевые объекты Build) с ошибкой.
+
+Ошибка сборки.
+
+       "C:\БГТУ\ЯП\NewSem\lab_17\LP_asm01 (2)\LP_asm01\LP_asm01a\LP_asm01a.vcxproj" (целевой объект Build ) (1) ->
+       (_MASM конечный объект) -> 
+         LP_asm01a.asm(1): error A2008: syntax error : .
+         LP_asm01a.asm(2): error A2008: syntax error : .
+         LP_asm01a.asm(8): error A2008: syntax error : .
+         C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\BuildCustomizations\masm.targets(69,5): error MSB3721: выход из команды "ml64.exe /c /nologo /Zi /Fo"x64\Debug\LP_asm01a.obj" /W3 /errorReport:prompt  /TaLP_asm01a.asm" с кодом "1".
+
+    Предупреждений: 0
+    Ошибок: 4
+
+Прошло времени 00:00:00.29

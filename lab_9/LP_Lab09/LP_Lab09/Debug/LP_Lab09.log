@@ -1,0 +1,19 @@
+﻿Сборка начата 04.10.2019 0:31:10.
+     1>Проект "C:\БГТУ\ЯП\lab_9\LP_Lab09\LP_Lab09\LP_Lab09.vcxproj" в узле 2 (целевые объекты Build).
+     1>InitializeBuildStatus:
+         Обращение к "Debug\LP_Lab09.tlog\unsuccessfulbuild".
+       ClCompile:
+         Для всех выходных данных обновления не требуется.
+       Link:
+         Для всех выходных данных обновления не требуется.
+         LP_Lab09.vcxproj -> C:\БГТУ\ЯП\lab_9\LP_Lab09\Debug\LP_Lab09.exe
+       FinalizeBuildStatus:
+         Файл "Debug\LP_Lab09.tlog\unsuccessfulbuild" удаляется.
+         Обращение к "Debug\LP_Lab09.tlog\LP_Lab09.lastbuildstate".
+     1>Сборка проекта "C:\БГТУ\ЯП\lab_9\LP_Lab09\LP_Lab09\LP_Lab09.vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+    Предупреждений: 0
+    Ошибок: 0
+
+Прошло времени 00:00:00.07

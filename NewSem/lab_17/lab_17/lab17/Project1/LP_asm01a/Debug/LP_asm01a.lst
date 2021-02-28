@@ -1,0 +1,139 @@
+Microsoft (R) Macro Assembler Version 14.16.27027.1	    12/13/19 12:49:57
+LP_asm01a.asm						     Page 1 - 1
+
+
+				.586
+
+				.model flat,stdcall
+				includelib kernel32.lib
+				ExitProcess PROTO :DWORD
+				getmin PROTO, pArray: PTR sdword,
+							 countOfElements: sdword
+
+				getmax PROTO, pArray: PTR sdword,
+							  countOfElements: sdword
+
+				.stack 4096
+
+ 00000000			.const
+
+ 00000000			.data
+
+ 00000000			.code
+ 00000000			getmax PROC, pArray: PTR sdword,
+							 countOfElements: sdword
+
+ 00000003  53				push ebx
+ 00000004  51				push ecx
+ 00000005  56				push esi
+ 00000006  8B 4D 0C			mov ecx, countOfElements 
+
+ 00000009  8B 75 08			mov esi, pArray
+					
+ 0000000C  BB 80000000			mov ebx,  -2147483648
+
+ 00000011				CYCLE:
+ 00000011  8B 06			mov eax, [esi]
+ 00000013  3B C3			cmp eax, ebx
+
+ 00000015  7F 02			jg isGreater
+ 00000017  EB 02			jmp isLess
+
+ 00000019				isGreater: 
+ 00000019  8B D8			mov ebx, eax
+ 0000001B				isLess:
+ 0000001B  83 C6 04			add esi, 4
+ 0000001E  E2 F1			loop CYCLE
+
+ 00000020  8B C3			mov eax, ebx
+ 00000022  5E				pop esi
+ 00000023  59				pop ecx
+ 00000024  5B				pop ebx
+					ret
+ 00000029				getmax ENDP
+
+ 00000029			getmin PROC, pArray: PTR sdword,
+							 countOfElements: sdword,
+
+ 0000002C  53				push ebx
+ 0000002D  51				push ecx
+ 0000002E  56				push esi
+ 0000002F  8B 4D 0C			mov ecx, countOfElements ; выполняет роль счетчика цикла
+ 00000032  8B 75 08			mov esi, pArray
+					
+ 00000035  BB 7FFFFFFF			mov ebx, 2147483647
+
+ 0000003A				CYCLE:
+ 0000003A  8B 06			mov eax, [esi]
+ 0000003C  3B C3			cmp eax, ebx
+					
+ 0000003E  7C 02			jl isLess
+
+ 00000040  EB 02			jmp isGreater
+
+ 00000042				isLess: 
+ 00000042  8B D8			mov ebx, eax
+ 00000044				isGreater:
+ 00000044  83 C6 04			add esi, 4
+ 00000047  E2 F1			loop CYCLE
+
+ 00000049  8B C3			mov eax, ebx
+ 0000004B  5E				pop esi
+ 0000004C  59				pop ecx
+ 0000004D  5B				pop ebx
+					ret
+ 00000052				getmin ENDP
+					
+				END
+Microsoft (R) Macro Assembler Version 14.16.27027.1	    12/13/19 12:49:57
+LP_asm01a.asm						     Symbols 2 - 1
+
+
+
+
+Segments and Groups:
+
+                N a m e                 Size     Length   Align   Combine Class
+
+CONST  . . . . . . . . . . . . .	32 Bit	 00000000 Para	  Public  'CONST'	 ReadOnly
+FLAT . . . . . . . . . . . . . .	GROUP
+STACK  . . . . . . . . . . . . .	32 Bit	 00001000 Para	  Stack	  'STACK'	 
+_DATA  . . . . . . . . . . . . .	32 Bit	 00000000 Para	  Public  'DATA'	
+_TEXT  . . . . . . . . . . . . .	32 Bit	 00000052 Para	  Public  'CODE'	
+
+
+Procedures, parameters, and locals:
+
+                N a m e                 Type     Value    Attr
+
+ExitProcess  . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+getmax . . . . . . . . . . . . .	P Near	 00000000 _TEXT	Length= 00000029 Public STDCALL
+  pArray . . . . . . . . . . . .	DWord	 bp + 00000008
+  countOfElements  . . . . . . .	DWord	 bp + 0000000C
+  CYCLE  . . . . . . . . . . . .	L Near	 00000011 _TEXT	
+  isGreater  . . . . . . . . . .	L Near	 00000019 _TEXT	
+  isLess . . . . . . . . . . . .	L Near	 0000001B _TEXT	
+getmin . . . . . . . . . . . . .	P Near	 00000029 _TEXT	Length= 00000029 Public STDCALL
+  pArray . . . . . . . . . . . .	DWord	 bp + 00000008
+  countOfElements  . . . . . . .	DWord	 bp + 0000000C
+  CYCLE  . . . . . . . . . . . .	L Near	 0000003A _TEXT	
+  isLess . . . . . . . . . . . .	L Near	 00000042 _TEXT	
+  isGreater  . . . . . . . . . .	L Near	 00000044 _TEXT	
+
+
+Symbols:
+
+                N a m e                 Type     Value    Attr
+
+@CodeSize  . . . . . . . . . . .	Number	 00000000h   
+@DataSize  . . . . . . . . . . .	Number	 00000000h   
+@Interface . . . . . . . . . . .	Number	 00000003h   
+@Model . . . . . . . . . . . . .	Number	 00000007h   
+@code  . . . . . . . . . . . . .	Text   	 _TEXT
+@data  . . . . . . . . . . . . .	Text   	 FLAT
+@fardata?  . . . . . . . . . . .	Text   	 FLAT
+@fardata . . . . . . . . . . . .	Text   	 FLAT
+@stack . . . . . . . . . . . . .	Text   	 FLAT
+
+	   0 Warnings
+	   0 Errors

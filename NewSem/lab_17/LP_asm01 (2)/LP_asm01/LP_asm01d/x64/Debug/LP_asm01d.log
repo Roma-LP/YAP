@@ -1,0 +1,27 @@
+﻿Сборка начата 09.12.2020 19:39:18.
+     1>Проект "C:\БГТУ\ЯП\NewSem\lab_17\LP_asm01 (2)\LP_asm01\LP_asm01d\LP_asm01d.vcxproj" в узле 2 (целевые объекты Build).
+     1>PrepareForBuild:
+         Создание каталога "x64\Debug\LP_asm01d.tlog\".
+       InitializeBuildStatus:
+         Создание "x64\Debug\LP_asm01d.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:classic /sdl /Od /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Yc"pch.h" /Fp"x64\Debug\LP_asm01d.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\LP_asm01d.pdb" /Gd /TP /FC /errorReport:prompt pch.cpp
+         pch.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:classic /sdl /Od /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"pch.h" /Fp"x64\Debug\LP_asm01d.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\LP_asm01d.pdb" /Gd /TP /FC /errorReport:prompt LP_asm01d.cpp
+         LP_asm01d.cpp
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\Lib.exe /OUT:"C:\БГТУ\ЯП\NewSem\lab_17\LP_asm01 (2)\LP_asm01\x64\Debug\LP_asm01d.lib" /NOLOGO /MACHINE:X64 x64\Debug\LP_asm01d.obj
+         x64\Debug\pch.obj
+         LP_asm01d.vcxproj -> C:\БГТУ\ЯП\NewSem\lab_17\LP_asm01 (2)\LP_asm01\x64\Debug\LP_asm01d.lib
+       CopyFilesToOutputDirectory:
+         Копирование файла из "x64\Debug\LP_asm01d.pdb" в "C:\БГТУ\ЯП\NewSem\lab_17\LP_asm01 (2)\LP_asm01\x64\Debug\LP_asm01d.pdb".
+       FinalizeBuildStatus:
+         Файл "x64\Debug\LP_asm01d.tlog\unsuccessfulbuild" удаляется.
+         Обращение к "x64\Debug\LP_asm01d.tlog\LP_asm01d.lastbuildstate".
+     1>Сборка проекта "C:\БГТУ\ЯП\NewSem\lab_17\LP_asm01 (2)\LP_asm01\LP_asm01d\LP_asm01d.vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+    Предупреждений: 0
+    Ошибок: 0
+
+Прошло времени 00:00:01.06

@@ -1,0 +1,31 @@
+﻿Сборка начата 09.12.2020 18:46:18.
+     1>Проект "C:\БГТУ\ЯП\NewSem\lab_17\lab_17\lab17\Project1\LP_Assm01D\LP_Assm01D.vcxproj" в узле 2 (целевые объекты Build).
+     1>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: промежуточный каталог (Debug\) содержит файлы, которые используются совместно с другим проектом (LP_Assm01D.vcxproj).  Это может привести к ошибкам очистки и перестроения.
+     1>InitializeBuildStatus:
+         Создание "Debug\LP_asm01d.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:classic /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Yc"stdafx.h" /Fp"Debug\LP_asm01d.pch" /Fo"Debug\\" /Fd"Debug\LP_asm01d.pdb" /Gd /TP /analyze- /FC /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:classic /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"Debug\LP_asm01d.pch" /Fo"Debug\\" /Fd"Debug\LP_asm01d.pdb" /Gd /TP /analyze- /FC /errorReport:prompt Funccpp.cpp
+         Funccpp.cpp
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\Lib.exe /OUT:"C:\БГТУ\ЯП\NewSem\lab_17\lab_17\lab17\Project1\Debug\LP_asm01d.lib" /NOLOGO Debug\Funccpp.obj
+         Debug\stdafx.obj
+         LP_Assm01D.vcxproj -> C:\БГТУ\ЯП\NewSem\lab_17\lab_17\lab17\Project1\Debug\LP_asm01d.lib
+       CopyFilesToOutputDirectory:
+         Копирование файла из "Debug\LP_asm01d.pdb" в "C:\БГТУ\ЯП\NewSem\lab_17\lab_17\lab17\Project1\Debug\LP_asm01d.pdb".
+       FinalizeBuildStatus:
+         Файл "Debug\LP_asm01d.tlog\unsuccessfulbuild" удаляется.
+         Обращение к "Debug\LP_asm01d.tlog\LP_asm01d.lastbuildstate".
+     1>Сборка проекта "C:\БГТУ\ЯП\NewSem\lab_17\lab_17\lab17\Project1\LP_Assm01D\LP_Assm01D.vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+
+       "C:\БГТУ\ЯП\NewSem\lab_17\lab_17\lab17\Project1\LP_Assm01D\LP_Assm01D.vcxproj" (целевой объект Build ) (1) ->
+       (PrepareForBuild конечный объект) -> 
+         C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: промежуточный каталог (Debug\) содержит файлы, которые используются совместно с другим проектом (LP_Assm01D.vcxproj).  Это может привести к ошибкам очистки и перестроения.
+
+    Предупреждений: 1
+    Ошибок: 0
+
+Прошло времени 00:00:01.39

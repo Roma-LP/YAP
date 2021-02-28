@@ -1,0 +1,45 @@
+﻿Сборка начата 09.12.2020 19:57:45.
+     1>Проект "C:\БГТУ\ЯП\NewSem\lab_17\LP_asm01 (2)\LP_asm01\LP_asm01e\LP_asm01e.vcxproj" в узле 2 (целевые объекты Build).
+     1>InitializeBuildStatus:
+         Обращение к "x64\Debug\LP_asm01e.tlog\unsuccessfulbuild".
+       _MASM:
+         Assembling LP_asm01e.asm...
+         cmd.exe /C "C:\Users\Senior Programmer\AppData\Local\Temp\tmp3db43adc99094ef3a539aa6fd8461417.cmd"
+         ml64.exe /c /nologo /Zi /Fo"x64\Debug\LP_asm01e.obj" /W3 /errorReport:prompt  /TaLP_asm01e.asm
+     1>LP_asm01e.asm(1): error A2008: syntax error : .
+     1>LP_asm01e.asm(2): error A2008: syntax error : .
+     1>LP_asm01e.asm(15): error A2008: syntax error : .
+     1>LP_asm01e.asm(66): error A2008: syntax error : SetConsoleTitleA
+     1>LP_asm01e.asm(67): error A2008: syntax error : invoke
+     1>LP_asm01e.asm(71): error A2070: invalid instruction operands
+     1>LP_asm01e.asm(75): error A2070: invalid instruction operands
+     1>LP_asm01e.asm(79): error A2008: syntax error : WriteConsoleA
+     1>LP_asm01e.asm(83): error A2008: syntax error : GetDifference
+     1>LP_asm01e.asm(84): error A2008: syntax error : WriteConsoleA
+     1>LP_asm01e.asm(90): error A2008: syntax error : main
+     1>LP_asm01e.asm(90): error A2088: END directive required at end of file
+     1>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\BuildCustomizations\masm.targets(69,5): error MSB3721: выход из команды "ml64.exe /c /nologo /Zi /Fo"x64\Debug\LP_asm01e.obj" /W3 /errorReport:prompt  /TaLP_asm01e.asm" с кодом "1".
+     1>Сборка проекта "C:\БГТУ\ЯП\NewSem\lab_17\LP_asm01 (2)\LP_asm01\LP_asm01e\LP_asm01e.vcxproj" завершена (целевые объекты Build) с ошибкой.
+
+Ошибка сборки.
+
+       "C:\БГТУ\ЯП\NewSem\lab_17\LP_asm01 (2)\LP_asm01\LP_asm01e\LP_asm01e.vcxproj" (целевой объект Build ) (1) ->
+       (_MASM конечный объект) -> 
+         LP_asm01e.asm(1): error A2008: syntax error : .
+         LP_asm01e.asm(2): error A2008: syntax error : .
+         LP_asm01e.asm(15): error A2008: syntax error : .
+         LP_asm01e.asm(66): error A2008: syntax error : SetConsoleTitleA
+         LP_asm01e.asm(67): error A2008: syntax error : invoke
+         LP_asm01e.asm(71): error A2070: invalid instruction operands
+         LP_asm01e.asm(75): error A2070: invalid instruction operands
+         LP_asm01e.asm(79): error A2008: syntax error : WriteConsoleA
+         LP_asm01e.asm(83): error A2008: syntax error : GetDifference
+         LP_asm01e.asm(84): error A2008: syntax error : WriteConsoleA
+         LP_asm01e.asm(90): error A2008: syntax error : main
+         LP_asm01e.asm(90): error A2088: END directive required at end of file
+         C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\BuildCustomizations\masm.targets(69,5): error MSB3721: выход из команды "ml64.exe /c /nologo /Zi /Fo"x64\Debug\LP_asm01e.obj" /W3 /errorReport:prompt  /TaLP_asm01e.asm" с кодом "1".
+
+    Предупреждений: 0
+    Ошибок: 13
+
+Прошло времени 00:00:00.31

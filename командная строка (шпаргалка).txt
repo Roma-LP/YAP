@@ -1,0 +1,8 @@
+cl /c EHsc .cpp
+link /out:.exe .obj 
+
+
+
+cl /c /EHsc /Yc"stdafx.h" main.cpp  
+cl(компиляция) /c(компиляция без компановки) /EHsc(обработка исключений) /Yu"stdafx.h" mul.cpp sub.cpp sum.cpp 
+link /out:qwerty.exe main.obj mul.obj sub.obj sum.obj 

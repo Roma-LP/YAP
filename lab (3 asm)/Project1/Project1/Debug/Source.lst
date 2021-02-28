@@ -1,0 +1,143 @@
+Microsoft (R) Macro Assembler Version 14.16.27027.1	    06/04/19 11:41:36
+Source.asm						     Page 1 - 1
+
+
+				.586P ; опрделяет работу с процессором типа пентиум
+				.MODEL FLAT, STDCALL ; сегмент модели памяти FLAT тип памяти(работает с 32 битным регистром) 
+				includelib kernel32.lib ;команда для подключения библиотек  kernel32.lib команда содержащая функцию ExitProcess
+				includelib user32.lib
+
+				ExitProcess PROTO : DWORD
+				MessageBoxA PROTO : DWORD, :DWORD, : DWORD, :DWORD
+
+				.STACK 4096
+
+ 00000000			.CONST 
+ 00000000 00000001		pupa dd 1,2,1,1,2,1,1 ; массив переменных 
+	   00000002
+	   00000001
+	   00000001
+	   00000002
+	   00000001
+	   00000001
+ 00000000			.DATA
+ 00000000 10 20 30 40		myBytes BYTE 10h,20h,30h,40h ; 
+ 00000004 008A 003B 0044	myWords WORD 8Ah,3Bh,44h,5Fh,99h
+	   005F 0099
+ 0000000E 00000001		myDoubles DWORD 1,2,3,4,5,6
+	   00000002
+	   00000003
+	   00000004
+	   00000005
+	   00000006
+ 00000026 0000000E R		myPointer DWORD myDoubles
+ = 00000000			MB_OK EQU 0
+ 0000002A CE F1 F2 F0 EE	STR1 DB"Островский А.Ю. 1-6",0
+	   E2 F1 EA E8 E9
+	   20 C0 2E DE 2E
+	   20 31 2D 36 00
+ 0000003E D0 E5 E7 F3 EB	STR2 DB "Результат : " 
+	   FC F2 E0 F2 20
+	   3A 20
+ 0000004A 00000000		b dd 0,0
+	   00000000
+ 00000052 00000000		HW   DD ?
+ 00000000			.CODE
+
+ 00000000			main PROC
+ 00000000			START :
+ 00000000  BE 00000000		mov ESI,0 ;очищаю esi
+ 00000005  8B 86 0000000E R	mov EAX,myDoubles[ESI] ; копирую адрес указателя из esi в eax 
+ 0000000B  8B 96 0000000E R	mov EDX,[myDoubles + ESI] ;копирую адрес указателя из esi + myDoubles в edx 
+
+
+ 00000011  B8 00000000		mov EAX,0
+ 00000016  BE 00000000 R	mov esi ,offset pupa
+ 0000001B  B9 00000007		mov ECX,7 ; 7 байтов в ecx
+ 00000020			CYRCLE:
+ 00000020  03 06		add eax,[esi] ; 
+ 00000022  83 C6 04		add esi, 4
+ 00000025  E2 F9		loop CYRCLE; проверяет является ли значаение ecx 7 
+ 00000027  B9 00000007		mov ECX,7
+ 0000002C  BB 00000000		mov ebx,0 
+ 00000031  BE 00000000 R	mov esi ,offset pupa
+ 00000036			CYRC:
+ 00000036  03 1E		add ebx,[esi] ; присваиваю значение esi
+ 00000038  74 11		jz xym ; сравнивает значкник с 0 ( если =0 то в xym)
+ 0000003A  83 C6 04		add esi, 4
+ 0000003D  BB 00000000		mov ebx,0
+ 00000042  E2 F2		loop CYRC
+ 00000044  BB 00000001		mov ebx,1
+ 00000049  EB 05		jmp en ; типа goto
+ 0000004B			xym:
+ 0000004B  BB 00000000		mov ebx,0
+ 00000050			en: 
+ 00000050  01 1D 0000004A R	add b,ebx
+ 00000056  83 05 0000004A R	add b,'0'
+	   30
+				INVOKE  MessageBoxA,HW,  OFFSET STR2,OFFSET str1 , MB_OK ; макрос вызывающий функцию MessageBoxA HW дескриптор окна	OFFSET записывает в заголовок MB_OK количество кнопок 
+
+
+ 00000074  6A FF			push - 1
+ 00000076  E8 00000000 E		call ExitProcess
+
+ 0000007B			main ENDP
+
+				end main
+Microsoft (R) Macro Assembler Version 14.16.27027.1	    06/04/19 11:41:36
+Source.asm						     Symbols 2 - 1
+
+
+
+
+Segments and Groups:
+
+                N a m e                 Size     Length   Align   Combine Class
+
+CONST  . . . . . . . . . . . . .	32 Bit	 0000001C Para	  Public  'CONST'	 ReadOnly
+FLAT . . . . . . . . . . . . . .	GROUP
+STACK  . . . . . . . . . . . . .	32 Bit	 00001000 Para	  Stack	  'STACK'	 
+_DATA  . . . . . . . . . . . . .	32 Bit	 00000056 Para	  Public  'DATA'	
+_TEXT  . . . . . . . . . . . . .	32 Bit	 0000007B Para	  Public  'CODE'	
+
+
+Procedures, parameters, and locals:
+
+                N a m e                 Type     Value    Attr
+
+ExitProcess  . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+MessageBoxA  . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+main . . . . . . . . . . . . . .	P Near	 00000000 _TEXT	Length= 0000007B Public STDCALL
+  START  . . . . . . . . . . . .	L Near	 00000000 _TEXT	
+  CYRCLE . . . . . . . . . . . .	L Near	 00000020 _TEXT	
+  CYRC . . . . . . . . . . . . .	L Near	 00000036 _TEXT	
+  xym  . . . . . . . . . . . . .	L Near	 0000004B _TEXT	
+  en . . . . . . . . . . . . . .	L Near	 00000050 _TEXT	
+
+
+Symbols:
+
+                N a m e                 Type     Value    Attr
+
+@CodeSize  . . . . . . . . . . .	Number	 00000000h   
+@DataSize  . . . . . . . . . . .	Number	 00000000h   
+@Interface . . . . . . . . . . .	Number	 00000003h   
+@Model . . . . . . . . . . . . .	Number	 00000007h   
+@code  . . . . . . . . . . . . .	Text   	 _TEXT
+@data  . . . . . . . . . . . . .	Text   	 FLAT
+@fardata?  . . . . . . . . . . .	Text   	 FLAT
+@fardata . . . . . . . . . . . .	Text   	 FLAT
+@stack . . . . . . . . . . . . .	Text   	 FLAT
+HW . . . . . . . . . . . . . . .	DWord	 00000052 _DATA	
+MB_OK  . . . . . . . . . . . . .	Number	 00000000h   
+STR1 . . . . . . . . . . . . . .	Byte	 0000002A _DATA	
+STR2 . . . . . . . . . . . . . .	Byte	 0000003E _DATA	
+b  . . . . . . . . . . . . . . .	DWord	 0000004A _DATA	
+myBytes  . . . . . . . . . . . .	Byte	 00000000 _DATA	
+myDoubles  . . . . . . . . . . .	DWord	 0000000E _DATA	
+myPointer  . . . . . . . . . . .	DWord	 00000026 _DATA	
+myWords  . . . . . . . . . . . .	Word	 00000004 _DATA	
+pupa . . . . . . . . . . . . . .	DWord	 00000000 CONST	
+
+	   0 Warnings
+	   0 Errors

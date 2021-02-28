@@ -1,0 +1,2 @@
+C:\Users\Кирилл\OneDrive\Documents\LP_Labs\LP_asm01\Debug\LP_asm01d.pdb
+C:\Users\Кирилл\OneDrive\Documents\LP_Labs\LP_asm01\LP_asm01d\Debug\LP_asm01d.pdb
